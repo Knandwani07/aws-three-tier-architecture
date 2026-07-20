@@ -118,5 +118,4 @@ This project demonstrates practical implementation of the following AWS concepts
 
 ⭐ **If you found this project helpful, consider giving it a star!**
 
-
 ---
