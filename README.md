@@ -52,22 +52,15 @@ This project demonstrates real-world AWS networking principles and serves as a s
 aws-three-tier-architecture/
 │
 ├── architecture/
-│   ├── architecture-diagram.png
-│   ├── architecture-overview.md
-│   └── README.md
+│   └── architecture-overview.md
 │
 ├── docs/
 │   ├── deployment-guide.md
 │   ├── execution-workflow.md
 │   ├── cleanup-guide.md
 │   └── README.md
-│
-├── scripts/
-│   ├── install-apache.sh
-│   ├── sample-index.html
-│   └── README.md
-│
-├── images/
+├
+│── images/
 │   ├── README.md
 │   ├── vpc.png
 │   ├── subnets.png
@@ -83,8 +76,6 @@ aws-three-tier-architecture/
 │   ├── target-health.png
 │   └── application-output.png
 │
-├── .gitignore
-├── LICENSE
 └── README.md
 ```
 
