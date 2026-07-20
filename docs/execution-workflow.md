@@ -2,37 +2,39 @@
 
 ## Workflow Diagram
 
-```mermaid
-flowchart LR
+## 🔄 Workflow Diagram
 
-    U[👤 User]
+```text
+                         Internet
+                             │
+                             ▼
+                   Internet Gateway (IGW)
+                             │
+                             ▼
+             Application Load Balancer (ALB)
+                             │
+                   HTTP (Port 80)
+                             │
+                             ▼
+             Private EC2 Application Server
+                    (Apache Web Server)
+                    │                │
+          MySQL (3306)         Private S3 Access
+                    │                │
+                    ▼                ▼
+          Amazon RDS MySQL     Gateway VPC Endpoint
+                                       │
+                                       ▼
+                                 Amazon S3
 
-    IGW[🌐 Internet Gateway]
 
-    ALB[⚖️ Application Load Balancer]
-
-    EC2[💻 Private EC2 Application Server]
-
-    RDS[(🗄️ Amazon RDS MySQL)]
-
-    EIC[🔑 EC2 Instance Connect Endpoint]
-
-    VPCE[🪣 S3 Gateway VPC Endpoint]
-
-    S3[(Amazon S3)]
-
-    U -->|HTTP Request| IGW
-    IGW --> ALB
-    ALB -->|Forward Request| EC2
-    EC2 -->|Read / Write Data| RDS
-    RDS -->|Database Response| EC2
-    EC2 -->|Application Response| ALB
-    ALB --> U
-
-    EIC -. Secure Admin Access .-> EC2
-
-    EC2 -. Private Access .-> VPCE
-    VPCE --> S3
+Administrator
+      │
+      ▼
+EC2 Instance Connect Endpoint
+      │
+      ▼
+Private EC2 Application Server
 ```
 
 ---
