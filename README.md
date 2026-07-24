@@ -2,17 +2,17 @@
 
 ## 📖 About this Project
 
-The **AWS Three-Tier Architecture** is a production-style cloud infrastructure project that demonstrates how to build a secure, scalable, and highly available web application using core AWS services. The architecture follows the industry-standard three-tier design pattern by separating the presentation, application, and database layers, enabling improved security, fault isolation, and maintainability.
+The **AWS Three-Tier Architecture** is a cloud infrastructure project that demonstrates how to build a secure, scalable, and highly available web application using core AWS services. The architecture follows the industry-standard three-tier design pattern by separating the presentation, application, and database layers, enabling improved security, fault isolation, and maintainability.
 
 The infrastructure is built on a custom Amazon VPC with public and private subnets spanning multiple Availability Zones. An internet-facing Application Load Balancer (ALB) routes incoming traffic to a private Amazon EC2 application server, while application data is securely stored in a private Amazon RDS MySQL database. To strengthen security, the project implements least-privilege Security Groups, IAM Roles, EC2 Instance Connect Endpoint for secure administrative access, and an Amazon S3 Gateway VPC Endpoint for private access to Amazon S3 without requiring a NAT Gateway.
 
-This project demonstrates real-world AWS networking principles and serves as a strong foundation for deploying production-ready cloud applications while following AWS architectural and security best practices.
+This project demonstrates real-world AWS networking principles and serves as a strong foundation for deploying cloud applications while following AWS architectural and security best practices.
 
 ---
 
 ## 🎯 Project Objectives
 
-- Design and deploy a production-style AWS three-tier architecture.
+- Design and deploy a AWS three-tier architecture.
 - Create a custom Amazon VPC with public and private subnets.
 - Configure secure networking using Route Tables and an Internet Gateway.
 - Deploy an internet-facing Application Load Balancer.
@@ -98,7 +98,6 @@ This project demonstrates practical implementation of the following AWS concepts
 - Three-Tier Architecture
 - Least Privilege Access
 - Private Infrastructure Design
-- Production-Style AWS Networking
 - Secure Application Deployment
 - Cost Optimization Without NAT Gateway
 - AWS Well-Architected Best Practices
